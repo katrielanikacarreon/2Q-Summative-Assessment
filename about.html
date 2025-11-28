@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About the Authors & References</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Sniglet&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: "Sniglet", cursive;
+    background-color: #DDF4E7;
+    color: #333;
+  }
+
+  nav {
+    background: #67C090;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav img.logo { height: 90px; }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+    background-color: #67C090;
+    font-family: "Fredoka One", cursive;
+  }
+
+  nav ul li a:hover { background-color: #26667F; }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+  }
+
+  .show { display: flex !important; flex-direction: column; gap: 10px; margin-top: 10px; }
+
+  .header-section {
+    text-align: center;
+    position: relative;
+    margin-top: 120px; 
+    width: 100%;
+    background: linear-gradient(135deg, #67C090, #DDF4E7);
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+  }
+
+  .header-section h1 {
+    position: relative;
+    color: #fff;
+    font-size: 48px;
+    z-index: 1;
+    font-family: "Fredoka One", cursive;
+    text-shadow: 2px 2px #124170;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .author-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+    width: 90%;
+    background: #fff;
+    border: 3px dotted #67C090;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  }
+
+  .author-section img {
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,105,144,0.25);
+    border: 5px solid #fff;
+  }
+
+  .author-section p {
+    max-width: 550px;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: left;
+    color: #444;
+  }
+
+  .author-section p strong {
+    display: block;
+    font-size: 24px;
+    color: #67C090;
+    margin-bottom: 10px;
+    font-family: "Fredoka One", cursive;
+  }
+
+  .reference-section {
+    background: #fff;
+    border-radius: 25px;
+    padding: 30px 25px;
+    width: 850px;
+    max-width: 95%;
+    position: relative;
+    border: 3px dotted #67C090;
+    box-shadow: 0 6px 15px rgba(0,105,144,0.1);
+    margin: 40px auto 60px auto;
+  }
+
+  .reference-section h2 {
+    color: #67C090;
+    font-family: "Fredoka One", cursive;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .reference-section ol {
+    padding-left: 20px;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #444;
+  }
+
+  .reference-section ol li {
+    margin-bottom: 12px;
+  }
+
+  footer {
+    background-color: #67C090;
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+  }
+
+  @media(max-width: 768px){
+    nav ul { display: none; flex-direction: column; gap: 10px; width: 100%; text-align: center;}
+    .hamburger { display: flex; }
+    .header-section h1 { font-size: 36px; }
+    .author-section { flex-direction: column; text-align: center; }
+    .author-section img { width: 80%; }
+    .reference-section { width: 95%; padding: 25px; }
+    .reference-section h2 { font-size: 24px; }
+  }
+
+  @media(max-width:480px){
+    .header-section h1 { font-size: 28px; }
+    .reference-section h2 { font-size: 22px; }
+  }
+
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <img src="https://raw.githubusercontent.com/msanover2029/msanover2029.github.io/refs/heads/main/palawan%20(1).png" alt="Palawan Logo" class="logo">
+    <ul id="nav-links">
+      <li><a href="index.html">Homepage</a></li>
+      <li><a href="about.html">About the Authors</a></li>
+      <li><a href="places.html">Landmarks</a></li>
+      <li><a href="facts.html">Facts & Demographics</a></li>
+      <li><a href="food.html">Local Delicacies</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</nav>
+
+<section class="header-section">
+  <h1>About the Authors & References</h1>
+</section>
+
+<div class="author-section">
+  <img src="https://raw.githubusercontent.com/msanover2029/msanover2029.github.io/refs/heads/main/tgt.jpg" alt="Author Photo">
+  <p>
+    <strong>Meet the Authors:</strong> Hello everyone! Our names are Marinello Zacharie Antoine S. Murakushi, Katriel Anika D. Carreon, and Erbyn Janelle S. Matibag from 9-Arayat. We created this website to share our shared love for Palawan. We hope that we encourage some of you to go there and have fun! Palawan is a lovely place to spend time with your family and enjoy. With its delightful food and beautiful beaches and mountains, it will surely be an unforgettable trip!
+  </p>
+</div>
+
+<div class="reference-section">
+  <h2>References</h2>
+  <ol>
+    <li>Del Mar, A. (2024, December 17). What to eat in Palawan, Philippines. Big Dream Boatman. <a href="https://bigdreamboatmancoron.com/blogs/coron-secrets/what-to-eat-in-palawan-philippines" target="_blank">Link</a></li>
+    <li>Masters, E. J. (2019, May 7). Filipino Foods – Tasty times in Puerto Princesa, Palawan. Trip Well Gal. <a href="https://www.tripwellgal.com/filipino-foods-tasty-times-puerto-princesa-palawan/" target="_blank">Link</a></li>
+    <li>Tolentino, K. (2025, March 10). Must see places in Palawan, Philippines — King Tolentino. King Tolentino. <a href="https://www.kingtolentino.com/blog/palawan-philippines" target="_blank">Link</a></li>
+    <li>Travel Palawan. (2025, June 2). Discover Palawan: the last frontier of the Philippines. <a href="https://www.travel-palawan.com/about-palawan/" target="_blank">Link</a></li>
+    <li>Beautiful World. (2025, March 26). Palawan Island. Facts & Information - Beautiful World Travel Guide. <a href="https://www.beautifulworld.com/asia/philippines/palawan-island/" target="_blank">Link</a></li>
+  </ol>
+</div>
+
+<footer>
+  Palawan Wonders | Created by Murakushi, Carreon, and Matibag
+</footer>
+
+<script>
+function toggleMenu(){
+  const nav = document.getElementById('nav-links');
+  nav.classList.toggle('show');
+}
+</script>
+
+</body>
+</html>

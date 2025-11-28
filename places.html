@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Palawan Wonders - Places</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Sniglet&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: "Sniglet", cursive;
+    background-color: #DDF4E7;
+    color: #333;
+  }
+
+  nav {
+    background: #67C090;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav img.logo {
+    height: 90px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+    background-color: #67C090;
+    font-family: "Fredoka One", cursive;
+  }
+
+  nav ul li a:hover { background-color: #26667F; }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+  }
+
+  .show { display: flex !important; flex-direction: column; gap: 10px; margin-top: 10px; }
+
+  .header-section {
+    text-align: center;
+    position: relative;
+    margin-top: 120px;
+    width: 100%;
+    background: url('https://static.toiimg.com/thumb/105334854/Palawan-The-Philippines.jpg?width=1200&height=900') center center / cover no-repeat;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-section::after {
+    content: "";
+    position: absolute;
+    top:0; left:0; width:100%; height:100%;
+    background-color: rgba(38,102,127,0.5);
+  }
+
+  .header-section h1 {
+    position: relative;
+    color: #DDF4E7;
+    font-size: 48px;
+    z-index: 1;
+    font-family: "Fredoka One", cursive;
+    text-shadow: 2px 2px #124170;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .places-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .place-card {
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 400px;
+    box-shadow: 0 6px 20px rgba(0,105,144,0.15);
+  }
+
+  .place-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+    transition: transform 0.3s ease;
+  }
+
+  .place-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .place-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.75);
+    color: #26667F;
+    padding: 20px;
+    backdrop-filter: blur(3px);
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .place-info strong {
+    display: block;
+    font-size: 24px;
+    font-family: "Fredoka One", cursive;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    background-color: #67C090;
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+
+  @media(max-width: 768px){
+    nav ul { display: none; flex-direction: column; gap: 10px; width: 100%; text-align: center;}
+    .hamburger { display: flex; }
+    .header-section { min-height: 30vh; }
+    .header-section h1 { font-size: 36px; }
+    .place-card { height: 300px; }
+    .place-info { font-size: 16px; }
+    nav img.logo { height: 70px; }
+  }
+
+  @media(max-width: 480px){
+    .header-section { min-height: 25vh; }
+    .header-section h1 { font-size: 28px; }
+    .place-card { height: 250px; }
+    .place-info { font-size: 14px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <img src="https://raw.githubusercontent.com/msanover2029/msanover2029.github.io/refs/heads/main/palawan%20(1).png" alt="Palawan Logo" class="logo">
+    <ul id="nav-links">
+      <li><a href="index.html">Homepage</a></li>
+      <li><a href="about.html">About the Authors</a></li>
+      <li><a href="places.html">Landmarks</a></li>
+      <li><a href="facts.html">Facts & Demographics</a></li>
+      <li><a href="food.html">Local Delicacies</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</nav>
+
+<section class="header-section">
+  <h1>Wonders of Palawan</h1>
+</section>
+
+<div class="places-container">
+  <div class="place-card">
+    <img src="https://www.pelago.com/img/destinations/puerto-princesa/1011-1024_puertoprincesa.jpg" alt="Puerto Princesa">
+    <div class="place-info">
+      <strong>Puerto Princesa:</strong>
+      Puerto Princesa is perfect for a chill trip with tons of things to explore. The Underground River is otherworldly, and the city balances nature, great food, and calm energy.
+    </div>
+  </div>
+
+  <div class="place-card">
+    <img src="https://lambontherhodes.com/wp-content/uploads/2016/08/image29.jpeg" alt="El Nido">
+    <div class="place-info">
+      <strong>El Nido:</strong>
+      El Nido’s cliffs and lagoons look unreal, like a real-life screensaver. Ideal for tropical getaways and breathtaking views.
+    </div>
+  </div>
+
+  <div class="place-card">
+    <img src="https://bestdivingphilippines.com/wp-content/uploads/2024/10/Coron-scaled.jpg" alt="Coron">
+    <div class="place-info">
+      <strong>Coron:</strong>
+      Coron leaves visitors saying “I need to come back.” Lakes, cliffs, and shipwrecks make it magical. Perfect for unforgettable adventures.
+    </div>
+  </div>
+
+  <div class="place-card">
+    <img src="https://www.kkday.com/en-ph/blog/wp-content/uploads/ph_el_nido_hidden_beach-1170x680.jpg" alt="Hidden Beach">
+    <div class="place-info">
+      <strong>Hidden Beach:</strong>
+      Hidden Beach feels like a secret paradise. White sand and crystal-clear water make it perfect for relaxing and soaking in nature.
+    </div>
+  </div>
+
+  <div class="place-card">
+    <img src="https://www.visitsoutheastasia.travel/wp-content/uploads/2019/10/shutterstock_1038141490-1024x767.jpg" alt="Twin Lagoon">
+    <div class="place-info">
+      <strong>Twin Lagoon:</strong>
+      Twin Lagoon gives you a magical “wow” moment. The mix of warm and cold water is unique and incredibly calming.
+    </div>
+  </div>
+</div>
+
+<footer>
+  Palawan Wonders | Created by Murakushi, Carreon, and Matibag
+</footer>
+
+<script>
+function toggleMenu(){
+  const nav = document.getElementById('nav-links');
+  nav.classList.toggle('show');
+}
+</script>
+
+</body>
+</html>

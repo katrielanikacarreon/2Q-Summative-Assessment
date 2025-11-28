@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Palawan Wonders - Facts & Demographics</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Sniglet&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: "Sniglet", cursive;
+    background-color: #DDF4E7;
+    color: #333;
+  }
+
+  nav {
+    background: #67C090;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav img.logo {
+    height: 90px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+    background-color: #67C090;
+    font-family: "Fredoka One", cursive;
+  }
+
+  nav ul li a:hover {
+    background-color: #26667F;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+  }
+
+  .show { display: flex !important; flex-direction: column; gap: 10px; margin-top: 10px; }
+
+  .header-section {
+    text-align: center;
+    position: relative;
+    margin-top: 120px; 
+    width: 100%;
+    background: url('https://i0.wp.com/www.projectlupad.com/wp-content/uploads/2018/01/Spectacular-El-Nido-Palawan-Philippines-Aerial-View-Project-LUPAD.jpeg?fit=1740%2C1160&ssl=1') center center / cover no-repeat;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-section::after {
+    content: "";
+    position: absolute;
+    top:0; left:0; width:100%; height:100%;
+    background-color: rgba(38,102,127,0.5);
+  }
+
+  .header-section h1 {
+    position: relative;
+    color: #DDF4E7;
+    font-size: 48px;
+    z-index: 1;
+    font-family: "Fredoka One", cursive;
+    text-shadow: 2px 2px #124170;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .content {
+    max-width: 1100px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 20px;
+    border: 3px dotted #67C090;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 6px 15px rgba(0,105,144,0.1);
+  }
+
+  .card img {
+    width: 300px;
+    border-radius: 15px;
+    flex-shrink: 0;
+  }
+
+  .card p {
+    font-size: 18px;
+    line-height: 1.6;
+    flex: 1;
+  }
+
+  .card p strong {
+    display: block;
+    font-size: 22px;
+    color: #26667F;
+    margin-bottom: 8px;
+    font-family: "Fredoka One", cursive;
+  }
+
+  footer {
+    background-color: #67C090;
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  @media(max-width: 768px){
+    nav ul { display: none; flex-direction: column; gap: 10px; width: 100%; text-align: center;}
+    .hamburger { display: flex; }
+    .header-section { min-height: 30vh; }
+    .header-section h1 { font-size: 32px; }
+    .card { flex-direction: column; text-align: center; }
+    .card img { width: 80%; }
+    nav img.logo { height: 70px; }
+  }
+
+  @media(max-width: 480px){
+    .header-section { min-height: 25vh; }
+    .header-section h1 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <img src="https://raw.githubusercontent.com/msanover2029/msanover2029.github.io/refs/heads/main/palawan%20(1).png" alt="Palawan Logo" class="logo">
+    <ul id="nav-links">
+      <li><a href="index.html">Homepage</a></li>
+      <li><a href="about.html">About the Authors</a></li>
+      <li><a href="places.html">Landmarks</a></li>
+      <li><a href="facts.html">Facts & Demographics</a></li>
+      <li><a href="food.html">Local Delicacies</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</nav>
+
+<section class="header-section">
+  <h1>Facts and Demographics</h1>
+</section>
+
+<div class="content">
+  <div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Kayangan_Lake%2C_Coron_-_Palawan.jpg" alt="Kayangan Lake">
+    <p><strong>Geography & Nature:</strong> Palawan is known for its pristine beaches, dramatic limestone cliffs, lagoons, and rich marine biodiversity. Kayangan Lake and El Nido are among the most famous spots for travelers seeking natural beauty.</p>
+  </div>
+  <div class="card">
+    <img src="https://bestdivingphilippines.com/wp-content/uploads/2025/03/Palawan-Culture-and-Art-1024x683.jpg" alt="Culture">
+    <p><strong>Culture:</strong> The indigenous groups, like the Tagbanua and Palaw’an, have rich traditions in weaving, music, and rituals. Art, crafts, and cultural performances are central to Palawan’s identity.</p>
+  </div>
+  <div class="card">
+    <img src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/70000/70007-Palawan-Province.jpg" alt="Demographics">
+    <p><strong>People & Languages:</strong> Home to over a million people, Palawan has a mix of Cuyunon, Tagbanua, Palaw’an, and other ethnic groups. Languages commonly spoken include Cuyunon, Tagalog, and English.</p>
+  </div>
+  <div class="card">
+    <img src="https://c4.staticflickr.com/4/3853/19305902346_550771ca6a_z.jpg" alt="Baragatan Festival">
+    <p><strong>Festivals:</strong> The Baragatan Festival celebrates Palawan’s vibrant culture with street dancing, parades, and traditional music, highlighting the island’s rich heritage and community spirit.</p>
+  </div>
+  <div class="card">
+    <img src="https://palawanparaw.wordpress.com/wp-content/uploads/2014/11/gener-and-adrian.jpg" alt="Sailing Traditions">
+    <p><strong>Maritime Traditions:</strong> Sailing and fishing are part of Palawan’s history. Local boats called "paraws" showcase skillful craftsmanship and remain vital to the livelihood of many communities.</p>
+  </div>
+</div>
+
+<footer>
+  Palawan Wonders | Created by Murakushi, Carreon, and Matibag
+</footer>
+
+<script>
+function toggleMenu(){
+  const nav = document.getElementById('nav-links');
+  nav.classList.toggle('show');
+}
+</script>
+</body>
+</html>

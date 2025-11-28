@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palawan Wonders - Facts & Demographics</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Sniglet&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Sniglet", cursive;
+      background-color: #DDF4E7;
+      color: #333;
+    }
+
+     nav {
+      background: #67C090;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(255, 105, 180, 0.2);
+    }
+
+    nav img {
+      height: 45px;
+      margin-right: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 8px 14px;
+      border-radius: 20px;
+      transition: background 0.3s ease;
+      background-color: #67C090;
+      font-family: "Fredoka One", cursive;
+    }
+
+    nav ul li a:hover {
+      background-color: #26667F;
+    }
+
+    .header-section {
+      text-align: center;
+      background: url('https://i0.wp.com/www.projectlupad.com/wp-content/uploads/2018/01/Spectacular-El-Nido-Palawan-Philippines-Aerial-View-Project-LUPAD.jpeg?fit=1740%2C1160&ssl=1') center/cover no-repeat;
+      height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .header-section::after {
+      content: "";
+      position: absolute;
+      top:0; left:0; width:100%; height:100%;
+      background-color: rgba(38,102,127,0.5);
+    }
+    .header-section h1 {
+      position: relative;
+      color: #DDF4E7;
+      font-size: 96px;
+      z-index: 1;
+      font-family: "Fredoka One", cursive;
+      text-shadow: 2px 2px #124170;
+      padding: 10px;
+    }
+    .header-section h2 {
+      position: relative;
+      color: #DDF4E7;
+      font-size: 48px;
+      z-index: 1;
+      font-family: "Fredoka One", cursive;
+      text-shadow: 2px 2px #124170;
+      padding: 10px;
+    }
+    .intro{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 12px;
+    }
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 20px;
+      margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.img-btn {
+  display: block;
+  width: 500px;
+  transition: transform 0.2s ease;
+}
+
+.img-btn img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.img-btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 500px) {
+  .img-btn {
+    width: 45%;
+  }
+}
+@media(max-width: 768px){
+    nav ul { display: none; flex-direction: column; gap: 10px; width: 100%; text-align: center;}
+    .hamburger { display: flex; }
+    .header-section h1 { font-size: 36px; }
+    .author-section { flex-direction: column; text-align: center; }
+    .author-section img { width: 80%; }
+    .reference-section { width: 95%; padding: 25px; }
+    .reference-section h2 { font-size: 24px; }
+  }
+
+  @media(max-width:480px){
+    .header-section h1 { font-size: 28px; }
+    .reference-section h2 { font-size: 22px; }
+  }
+
+    footer {
+      background-color: #67C090;
+      color: #fff;
+      text-align: center;
+      padding: 18px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <img src="https://raw.githubusercontent.com/msanover2029/msanover2029.github.io/refs/heads/main/palawan%20(1).png" alt="Palawan Wonders Logo">
+    <ul>
+      <li><a href="index.html">Homepage</a></li>
+      <li><a href="about.html">Author's Page</a></li>
+      <li><a href="facts.html">Facts & Demographies</a></li>
+      <li><a href="places.html">Landmarks</a></li>
+      <li><a href="food.html">Local Delicacies</a></li>
+    </ul>
+  </nav>
+
+  <section class="header-section">
+    <h2>Explore</h2>
+    <h2>Palawan</h2>
+    <h2>Now</h2>
+  </section>
+  <div class="intro">
+    <h1>Explore Palawan Island</h1>
+    <p>Palawan is a slice of heaven, a sliver of an island that teems with exotic wildlife, quaint fishing villages, and UNESCO World Heritage Sites. Wave hello to endangered animals at the Calauit Game Preserve and Wildlife Sanctuary or explore the Japanese shipwrecks of Coron Island, regarded as one of the best dive sites in the world. A guided boat tour of the Puerto Princesa Underground River will take your breath away.</p>
+  </div>
+<div class="button-container">
+  <a href="about.html" class="img-btn"><img src="https://raw.githubusercontent.com/msanover2029/msanover2029.github.io/refs/heads/main/author's%20page.png" alt="Button 1"></a>
+  <a href="facts.html" class="img-btn"><img src="https://raw.githubusercontent.com/msanover2029/msanover2029.github.io/refs/heads/main/facts.png" alt="Button 2"></a>
+  <a href="places.html" class="img-btn"><img src="https://raw.githubusercontent.com/msanover2029/msanover2029.github.io/refs/heads/main/landmarks.png" alt="Button 3"></a>
+  <a href="food.html" class="img-btn"><img src="https://raw.githubusercontent.com/msanover2029/msanover2029.github.io/refs/heads/main/local%20delicacies.png" alt="Button 4"></a>
+</div>
+
+  <footer>
+    Palawan Wonders | Created by Murakushi, Carreon, and Matibag
+  </footer>
+</body>
+</html>
